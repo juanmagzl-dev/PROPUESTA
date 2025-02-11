@@ -1,0 +1,165 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+ul li {
+    background: #292929;
+    margin: 8px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+ul li.completed {
+    text-decoration: line-through;
+    color: #8bc34a;
+}
+
+ul li .actions {
+    display: flex;
+    gap: 10px;
+}
+
+ul li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+ul li button.complete {
+    background: #4caf50;
+    color: #ffffff;
+}
+
+ul li button.complete:hover {
+    background: #388e3c;
+}
+
+ul li button.edit {
+    background: #2196f3;
+    color: #ffffff;
+}
+
+ul li button.edit:hover {
+    background: #1e88e5;
+}
+
+ul li button.delete {
+    background: #f44336;
+    color: #ffffff;
+}
+
+ul li button.delete:hover {
+    background: #d32f2f;
+}
+
+ul li button.up,
+ul li button.down {
+    background: #9e9e9e;
+    color: #ffffff;
+}
+
+ul li button.up:hover,
+ul li button.down:hover {
+    background: #757575;
+}
+
+form input[type="text"],
+form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #424242;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #292929;
+    color: #ffffff;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #4caf50;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #388e3c;
+}
+
+.btn-vaciar {
+    display: inline-block;
+    background: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn-vaciar:hover {
+    background: #d32f2f;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #388e3c;
+}
