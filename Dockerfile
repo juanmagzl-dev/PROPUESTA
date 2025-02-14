@@ -9,3 +9,6 @@ EXPOSE 80
 
 # Iniciar Apache cuando se ejecute el contenedor
 CMD ["apache2-foreground"]
+
+
+RUN touch /var/www/html/usuarios.txt && chmod 666 /var/www/html/usuarios.txt
